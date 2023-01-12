@@ -281,7 +281,7 @@
 		text-align: center;
 	}
 
-	.picUrl-uploader .el-upload {
+	.picUrl-uploader .el-icon-plus {
 		border: 1px dashed #d9d9d9;
 		border-radius: 6px;
 		cursor: pointer;
@@ -289,7 +289,7 @@
 		overflow: hidden;
 	}
 
-	.picUrl-uploader .el-upload:hover {
+	.picUrl-uploader .el-icon-plus:hover {
 		border-color: #20a0ff;
 	}
 
@@ -301,7 +301,6 @@
 		line-height: 120px;
 		text-align: center;
 	}
-
 	.picUrl {
 		width: 145px;
 		height: 145px;
