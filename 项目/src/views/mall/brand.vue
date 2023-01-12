@@ -96,7 +96,6 @@
 				total: 0,
 				listLoading: true,
 				tab: 'all',
-				listLoading: true,
 				listQuery: {
 					page: 1,
 					limit: 20,
@@ -152,7 +151,10 @@
 				this.dataForm.picUrl = response.data.url.replace('http://localhost:8080', this.$store.state.user.url)
 			},
 			handleUpdate(row) {
-				console.log(this.$store.state.user.url, 'aaaa', row)
+				if(row.picUrl==undefined){
+					row.picUrl=' '
+				}
+				console.log(this.$store.state.user.url, 'aaaa', row.picUrl)
 				row.picUrl = row.picUrl.replace("http://localhost:8080", this.$store.state.user.url)
 				this.dataForm = Object.assign({}, row)
 				this.dialogStatus = 'update'

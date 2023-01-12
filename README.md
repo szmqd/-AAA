@@ -1,39 +1,35 @@
 # 2208B项目A
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
-
-#### 软件架构
-软件架构说明
-
+bsmall商城
+2208-B 12组合作考核项目
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
+1.  git clone https://gitee.com/NightT1me/2208-b-project-a.git
+2.  npm i
+3.  run dev
+4.  
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+12组：{
+		纪华冬:	1.品牌制造商
+				2.商品类目，
+				3.订单管理，
+				4.通用问题,
+				5.关键词，
+				6.商品列表，
+				7.商品上架
+				
+		薛金峰:	1.会员管理，
+				2.收货地址,
+				3.会员足迹,
+				4.搜索历史,
+				5.商品统计
+				
+		孙振美:	1.广告管理,
+				2.优惠券管理,
+				3.专题管理,
+				4.团购规则,
+				5.订单统计
+}
