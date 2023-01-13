@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import { statOrder } from "@/api/stat";
-import VeLine from "v-charts/lib/line";
+import { statOrder } from '@/api/stat'
+import VeLine from 'v-charts/lib/line'
 
 export default {
   components: { VeLine },
@@ -18,36 +18,27 @@ export default {
     return {
       chartData: {},
       chartSettings: {},
-      chartExtend: {},
-    };
+      chartExtend: {}
+    }
   },
   created() {
     statOrder().then((response) => {
-      this.chartData = response.data.data;
+      this.chartData = response.data.data
       this.chartSettings = {
-        tooltip: {
-          trigger: "item",
-        },
-        legend: {
-          data: [
-            { '订单量': orders },
-            { '下单用户': customers },
-            { '订单总额': amount },
-            { '客单价': pcr },
-          ],
-        },
-      };
+        labelMap: {
+          orders: '订单量',
+          customers: '下单用户',
+          amount: '订单总额',
+          pcr: '客单价'
+        }
+      }
       this.chartExtend = {
-        xAxis: {
-          type: "category",
-          boundaryGap: false,
-          data: [day],
-        },
+        xAxis: { boundaryGap: true },
         series: {
-          label: { show: true, position: "top" },
-        },
-      };
-    });
-  },
-};
+          label: { position: 'top' }
+        }
+      }
+    })
+  }
+}
 </script>
